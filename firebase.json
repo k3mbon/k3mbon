@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "dist",
+    "site": "k3mbon",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",  
+        "destination": "/index.html" 
+      }
+    ],
+    "errorPages": {
+      "404": "/index.html"  
+    }
+  }
+}
